@@ -22,7 +22,7 @@ __author__ = 'Yadnesh'
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 DATABASE_URL = os.environ['DATABASE_URL']
-print(f`DB URL {DATABASE_URL}`)
+print(f"DB URL {DATABASE_URL}")
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 # app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://postgres:Cyber123@localhost:5432/postgres"
 app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_URL
